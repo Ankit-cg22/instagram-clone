@@ -1,0 +1,26 @@
+.image-uploader{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    justify-content:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /* position:fixed;
+    bottom:0; */
+    /* these two lines help it to stick at bottom */
+    
+    /* z-index:1; */
+    /* this line makes it always apear above the posts */
+    
+}
+
+.upload-button{
+    height:28px;
+}
+
+.progressBar{
+    width:100%;
+}

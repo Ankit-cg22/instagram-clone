@@ -1,0 +1,72 @@
+.post{
+    max-width:500px;
+    /* this will make sure if window-size>= 500px , post width=500px , if window size<500px post width= wisth of screen . */
+    /* it resizes when window size is less that max-width. once window is bigger than max width it stays constant at max width.  */
+    background-color:white;
+    border: solid 1px lightgray;
+    margin-bottom:45px;
+}
+
+.post__image{
+ width:100%;
+ object-fit: contain;  
+ /* width:100%;
+    object-fit: contain;    
+  by these two above lines we can make sure that the image width is always same as the width of the window. */
+
+  border-top:solid 1px lightgray;
+  border-bottom:solid 1px lightgray;
+
+  /* it already has border-left and bottom-right from the border applied to the post component. */
+}
+
+.post__text{
+    font-weight: normal;
+    padding:20px;
+}
+
+.post__header{
+    display:flex;
+    align-items: center; /*vertical center */
+    /* justify-content:center; // horizontal center  */
+    padding:20px;
+
+}
+
+.post__avatar{
+    margin-right:5px;
+}
+
+.post_commentBox{
+    display:flex;
+    margin-top:5px;
+    
+}
+
+.post__input{
+    flex:1;
+    border:none;
+    padding:10px;
+    border-top: 2px solid black;
+}
+
+.post__button{
+    flex:0;
+    padding:10px;
+    border-top: 2px solid black;
+    font-weight: bolder;
+    color:cornflowerblue;
+    background:lightgray;
+
+}
+
+/* we set .post__input flex =1 and .post__button flex=0
+it means give least feasible space to post button and give the rest to post input
+we want to give post input as much space as possible.
+give post button as little as possible and 
+post input as much as possible
+*/
+
+.post_comments{
+    padding:20px;
+}
